@@ -1,6 +1,6 @@
-/* explore page styles */
-/* main branch commit */
-
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 * {
   animation: fadein 1s ease;
 }
@@ -11,6 +11,8 @@
   transition: all 1s ease;
 }
 .introduction {
+  font-size: larger;
+  font-weight: 700;
   padding: 1rem;
   display: flex;
   width: 100%;
@@ -23,6 +25,11 @@
 
   border-radius: 1rem;
 }
+.introduction-text-never {
+  font-size: 5rem;
+  line-height: 1em;
+  font-weight: 700;
+}
 
 .introduction-text {
   z-index: 2;
@@ -31,6 +38,7 @@
 }
 .product-catelog {
   padding: 1rem;
+  padding-left: 0;
   display: flex;
   overflow: auto;
 }
