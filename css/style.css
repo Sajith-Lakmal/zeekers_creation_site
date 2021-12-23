@@ -1,0 +1,47 @@
+#home {
+  color: white;
+  background-image: url("../images/sidebar_images/background.jpg"); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#services,
+#about-us {
+  position: relative;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  opacity: 0;
+  transition: all 1s;
+}
+
+* {
+  animation: fadein 1s ease;
+}
+
+.services:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background-image: url("../assets/svg/web.svg"); /* The image used */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.services-content {
+  z-index: 2;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
