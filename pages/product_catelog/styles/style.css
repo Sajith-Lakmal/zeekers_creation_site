@@ -1,0 +1,47 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.introduction {
+  border-radius: 0.25em;
+  background-image: linear-gradient(45deg, #f0f4ffd9 50%, #f7f7f772 65%),
+    url("../assets/svg/introduction_background.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain;
+  background-position: left bottom, right bottom;
+  font-size: 2rem;
+  color: #252525;
+  padding: 4em 1em;
+}
+.zeekers-creation {
+  font-size: 4rem;
+  font-weight: 500;
+  color: #2f397d;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1em;
+  border-radius: 0.5em;
+  background-image: linear-gradient(45deg, #6676e06a 40%, #6676e0ad 60%);
+}
+.service-holder {
+  display: flex;
+  text-align: center;
+  margin-bottom: 1em;
+  overflow: auto;
+}
+.service-card {
+  margin-block: 0.5em;
+  flex: 1 0 calc(33.33% - 0.5em);
+  border: 1px solid #3b30d5ac;
+  border-radius: 0.5em;
+  padding: 0.25em;
+  background-image: linear-gradient(45deg, #ffffff58 40%, #ffffff95 70%);
+}
+
+.service-holder > * + * {
+  margin-left: 0.5em;
+}
